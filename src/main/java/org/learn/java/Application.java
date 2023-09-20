@@ -14,6 +14,12 @@ public class Application {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
         ClassB b= (ClassB) context.getBean(ClassB.class);
-        System.out.println(b.getClassA().doSomething());
+        ClassB b2= (ClassB) context.getBean(ClassB.class);
+
+        System.out.println(b.getId());
+
+        b2.setId(2020);
+        System.out.println(b.getId());
+        context.close();
     }
 }
