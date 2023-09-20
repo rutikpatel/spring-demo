@@ -22,7 +22,6 @@ public class Application {
 //
 //        ClassB b2= (ClassB) context.getBean(ClassB.class);
 //
-        System.out.println(b1.getId());
 //
 //        b2.setId(2020);
 //
